@@ -18,7 +18,7 @@ html {
 }
 
 
-/* ---------------- NAVBAR ---------------- */
+/* --------------------------------- NAVBAR ---------------------------- */
 .navbar {
   position: fixed;
   top: 10px;
@@ -38,9 +38,6 @@ html {
   background-clip: padding-box;
   z-index: 1000;
 }
-
-
-
 
 /* Name text */
 .name-rotate {
@@ -77,9 +74,6 @@ html {
 }
 
 
-
-
-
 .nav-links {
   list-style: none;
   display: flex;
@@ -102,6 +96,9 @@ html {
   height: 2px;
   background: #f99316;
   transition: 0.3s;
+}
+.nav-links a:hover{
+  color: #ed6810;
 }
 
 .nav-links a:hover::after {
@@ -143,7 +140,8 @@ html {
   pointer-events: auto;
 }
 
-/* ---------------- HERO / ABOUT  ---------------- */
+
+/* ---------------------------------- HERO / ABOUT  SECTION ----------------------- */
 .hero {
   min-height: 100vh;
   display: flex;
@@ -205,6 +203,7 @@ html {
   box-shadow: 0 20px 60px rgba(0,0,0,0.6);
 }
 
+
 /* ---------------- RESPONSIVE ---------------- */
 @media (max-width: 900px) {
   .hero {
@@ -241,7 +240,11 @@ html {
 }
 
 
-/* ---------------- contact section  ---------------- */
+/* --------------------------------- SKILLS SECTION ------------------------- */
+
+
+
+/* --------------------------------- CONTACT SECTION ------------------------- */
 /* Wrapper */
 .contact-wrapper {
   max-width: 1150px;
