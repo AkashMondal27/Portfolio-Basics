@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+   <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+  <!-- <div class="nav-left">
+    <a href="#" class="home-icon">🏠</a>
+  </div> -->
+    <div class="nav-left">
+    <a href="#home" ></a>
+    <span class="name-rotate" id="nameRotate">Akash Mondal</span>
+    </div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#">Skills</a></li>
+    <li><a href="#">Projects</a></li>
+    <li><a href="#">Education</a></li>
+    <li><a href="#contact-wrapper">Contact</a></li>
+  </ul>
+
+  <div class="hamburger" id="hamburger">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</nav>
+<!-- Background overlay -->
+<div class="menu-overlay" id="menuOverlay"></div>
+
+
+<!-- HERO SECTION -->
+<section class="hero" id="home">
+  <div class="hero-left">
+    <h1>
+      Akash <span>Mondal</span>
+    </h1>
+
+    <h2>Full Stack Developer in progresss</h2> 
+
+    <p>
+     Computer Science Undergraduate .
+     Currently pursuing B.Tech in Computer Science 
+     and Engineering from Seacom Skills University.
+    </p>
+
+     <a href="https://github.com/AkashMondal27?tab=overview&from=2026-01-01&to=2026-01-21" download class="btn">
+       GITHUB
+     </a>
+
+  </div>
+
+  <div class="hero-right">
+    <img src="assects/mypic.jpeg" alt="Profile" />
+  </div>
+</section>
+
+
+
+<!--contact section-->
+<section class="contact-wrapper" id="contact-wrapper">
+
+    <!-- TOP CENTER HEADING -->
+    <h2 class="section-title center-title">Get In <span class="accent">Touch</span></h2>
+        <p class="contact-intro">
+          I'm currently looking for new opportunities and exciting projects to work on. 
+          Whether you have a question, want to collaborate, or just want to say hi, 
+          I'll try my best to get back to you!
+        </p>
+
+    <div class="contact-content">
+
+        <!-- LEFT SIDE -->
+        <div class="left-contact">
+
+            <div class="contact-cards">
+
+                <div class="card glass-card">
+                    <h3>Contact Information</h3>
+
+                    <div class="contact-row">
+                        <div class="icon"><i class="fa-solid fa-phone"></i></div>
+                        <div class="info">
+                            <a href="tel:+918250107704" class="contact-link">+918250107704</a>
+                            <div class="muted">Phone</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-row">
+                        <div class="icon"><i class="fa-solid fa-envelope"></i></div>
+                        <div class="info">
+                            <a href="mailto:akashmondal102003@gmail.com" class="contact-link">
+                                akashmondal102003@gmail.com
+                            </a>
+                            <div class="muted">Email</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-row">
+                        <div class="icon"><i class="fa-solid fa-location-dot"></i></div>
+                        <div class="info">
+                            <a href="#" class="contact-link">Bolpur, Birbhum, West Bengal</a>
+                            <div class="muted">Location</div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- SOCIAL CARD -->
+                <div class="card glass-card">
+                    <h3>My Social Media</h3>
+
+                    <div class="social-grid">
+                        <a class="social-btn" href="https://github.com/AkashMondal27" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github"></i><span>GitHub</span></a>
+                        <a class="social-btn" href="https://www.linkedin.com/in/akashmondal27/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i><span>LinkedIn</span></a>
+                        <a class="social-btn" href="https://x.com/AkashMonda27" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-x-twitter"></i><span>X</span></a>
+                        <a class="social-btn" href="https://www.instagram.com/akash__diaries/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+                    </div>
+
+                </div>
+                
+
+            </div>
+
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="right-form">
+
+            <div class="contact-container">
+                <h2>Feel free to connect</h2>
+
+                <form id="contactForm" action="https://formspree.io/f/xvgewvja" method="POST">
+                    <label>Name</label>
+                    <input type="text" name="name" required>
+
+                    <label>Email</label>
+                    <input type="email" name="email" required>
+
+                    <label>Subject</label>
+                    <input type="text" name="subject">
+
+                    <label>Message</label>
+                    <textarea name="message" rows="6" required></textarea>
+
+                    <button type="submit">✉ Send Message</button>
+                </form>
+
+                <div id="popup" class="popup">Message submitted successfully!</div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
