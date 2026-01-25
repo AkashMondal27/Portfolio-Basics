@@ -76,3 +76,28 @@ form.addEventListener("submit", async (e) => {
         form.reset();
     }
 });
+
+//*******************************PROJRCT SECTION  ********************** */// basic script to toggle "View All" which reveals duplicate cards to make the list look like 9 projects
+document.addEventListener("DOMContentLoaded", () => {
+  const toggleBtn = document.getElementById("toggleViewBtn");
+  const cardsWrap = document.getElementById("cardsWrap");
+
+  toggleBtn.addEventListener("click", () => {
+    const expanded = cardsWrap.classList.toggle("expanded");
+    toggleBtn.setAttribute("aria-expanded", expanded ? "true" : "false");
+    toggleBtn.textContent = expanded ? "Show Less" : "View All";
+
+    if (expanded) {
+      // smooth scroll so the user sees new cards
+      setTimeout(() => cardsWrap.scrollIntoView({ behavior: "smooth" }), 120);
+    }
+  });
+
+  // keyboard accessibility
+  toggleBtn.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      toggleBtn.click();
+    }
+  });
+});
