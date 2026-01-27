@@ -141,6 +141,18 @@ html {
   pointer-events: auto;
 }
 
+@media (max-width: 900px) {
+  .navbar {
+    left: 16px;
+    right: 30px; 
+    width: auto;
+    transform: none;
+    margin: 0;
+  }
+}
+
+
+
 
 /* ---------------------------------- HERO / ABOUT  SECTION ----------------------- */
 .hero {
@@ -394,21 +406,8 @@ html {
 
 
 /** --------------------------------- PROJECTS SECTION ------------------------- */
-/* * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-body {
-  font-family: "Poppins", sans-serif;
-  background: #041017;
-  color: aliceblue;
-  line-height: 1.6;
-  padding-bottom: 80px;
-} */
 
-/* ---------- Projects section styles (new) ---------- */
 .projects-section {
   justify-content: center;
   text-align: center;
@@ -484,7 +483,6 @@ body {
   );
   border-radius:14px;
   padding: 16px;
-  /* padding: 20px; */
   min-height: auto;
   display: flex;
   flex-direction: column;
@@ -503,7 +501,6 @@ body {
 
 /* media thumbnail fixed size so cards align */
 .card-media {
-  /* height: 150px; */
   height: 130px;
   border-radius: 10px;
   margin: -4px -4px 12px -4px;
@@ -690,7 +687,7 @@ body {
     margin-bottom: 120px;
 }
 #Education {
-  scroll-margin-top: 105px; /* slightly more than navbar height */
+  scroll-margin-top: 75px; /* slightly more than navbar height */
 }
 
 /* Heading */
@@ -761,7 +758,7 @@ body {
 
 
 
-/* ---------------------------------CONTACT SECTION ------------------------- */
+/* -----------------------------------CONTACT SECTION ------------------------- */
 /* Wrapper */
 .contact-wrapper {
   max-width: 1150px;
@@ -983,6 +980,11 @@ button {
   body {
     height: auto;
   }
+  .contact-wrapper {
+    margin-right: 20px;   /* ✅ space from right */
+    margin-left: 17px;    /* optional: keeps symmetry */
+    
+  }
 
   .contact-content {
     flex-direction: column;
@@ -995,3 +997,35 @@ button {
 }
 
 
+
+/* --------------------------------- FOOTER ---------------------------- */
+.footer {
+  position: relative;
+  width: 90%;
+  margin: 80px auto 20px;   /* space from content + bottom */
+
+  padding: 14px 30px;
+  display: flex;
+  justify-content: center;
+
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+
+  border-radius: 18px;
+  border: 1px solid rgba(255,255,255,0.15);
+  background-clip: padding-box;
+
+  color: #e5e7eb;
+  font-size: 13px;
+}
+
+/* Footer text */
+.footer p {
+  margin: 0;
+  opacity: 0.85;
+  letter-spacing: 0.3px;
+}
+.footer:hover {
+  box-shadow: 0 0 25px rgba(255, 255, 255, 0.08);
+}

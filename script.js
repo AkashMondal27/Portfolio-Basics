@@ -77,7 +77,8 @@ form.addEventListener("submit", async (e) => {
     }
 });
 
-//*******************************PROJRCT SECTION  ********************** */// basic script to toggle "View All" which reveals duplicate cards to make the list look like 9 projects
+//*******************************PROJRCT SECTION  ********************** */
+
 document.addEventListener("DOMContentLoaded", () => {
   const toggleBtn = document.getElementById("toggleViewBtn");
   const cardsWrap = document.getElementById("cardsWrap");
@@ -101,3 +102,5 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
+
+
