@@ -144,7 +144,7 @@ html {
 @media (max-width: 900px) {
   .navbar {
     left: 16px;
-    right: 30px; 
+    right: 16px; 
     width: auto;
     transform: none;
     margin: 0;
@@ -415,7 +415,7 @@ html {
   max-width: 1200px;
   margin: 80px auto 120px;
   position: relative;
-  padding: 0 70px;
+  padding: 0 50px;
 }
 #projects {
   scroll-margin-top: 110px; /* height of navbar + spacing */
@@ -467,7 +467,7 @@ html {
 .cards-wrap {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 50px;
+  gap: 32px;
   position: relative;
   z-index: 1;
   align-items: stretch;     
@@ -482,7 +482,7 @@ html {
     rgba(0, 0, 0, 0.12)
   );
   border-radius:14px;
-  padding: 16px;
+  padding: 14px;
   min-height: auto;
   display: flex;
   flex-direction: column;
@@ -501,7 +501,7 @@ html {
 
 /* media thumbnail fixed size so cards align */
 .card-media {
-  height: 130px;
+  height: 110px;
   border-radius: 10px;
   margin: -4px -4px 12px -4px;
 
@@ -588,7 +588,7 @@ html {
   margin: 0;
   color: rgba(255, 255, 255, 0.86);
   line-height: 1.5;
-  font-size: 14px;
+  font-size: 13px;
 
   overflow: hidden;
   display: -webkit-box;
@@ -627,7 +627,7 @@ html {
     grid-auto-rows: auto; /* allow natural flow on small screens */
   }
   .title { font-size: 28px; }
-  .card { min-height: 220px; }
+  .card { min-height: 210px; }
   .card-media { height: 90px; }
   .card-label { padding: 8px 36px; }
   .card-links { padding: 0 6px; }
@@ -684,15 +684,15 @@ html {
     text-align: center;
     color: #fff;
     font-family: 'Poppins', sans-serif;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
 #Education {
-  scroll-margin-top: 75px; /* slightly more than navbar height */
+  scroll-margin-top: 70px; /* slightly more than navbar height */
 }
 
 /* Heading */
 .edu-heading {
-    font-size: 3rem;
+    font-size: 2.2rem;
     margin-bottom: 30px;
     font-weight: 500;
     
@@ -704,10 +704,10 @@ html {
 
 /* Education Box */
 .education-box {
-    width: 70%;
+    width: 65%;
     max-width: 900px;
     margin: auto;
-    padding: 20px 40px;
+    padding: 18px 32px;
     background: radial-gradient(circle at center, #0f1624, #0a0f1a);
     /* background: rgba(255, 255, 255, 0.03); */
     border-radius: 20px;
@@ -720,13 +720,13 @@ html {
 
 /* Inside Text */
 .education-box h2 {
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 15px;
     font-weight: 600;
 }
 
 .education-box h4 {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 12px;
     font-weight: 500;
     color: #ffb34d;
@@ -734,7 +734,7 @@ html {
 
 /* Year + Place */
 .year-place {
-    font-size: 17px;
+    font-size: 15px;
     opacity: 0.8;
     margin-bottom: 20px;
 }
@@ -751,11 +751,21 @@ html {
 
 /* Description */
 .desc {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     opacity: 0.85;
 }
 
+@media (max-width: 900px) {
+  .education-box {
+    width: 75%;
+    padding: 16px 20px;
+  }
+
+  .edu-heading {
+    font-size: 1.9rem;
+  }
+}
 
 
 /* -----------------------------------CONTACT SECTION ------------------------- */
@@ -999,10 +1009,11 @@ button {
 
 
 /* --------------------------------- FOOTER ---------------------------- */
-.footer {
+
+footer {
   position: relative;
   width: 90%;
-  margin: 80px auto 20px;   /* space from content + bottom */
+  margin: 80px auto 0;   /* ✅ NO bottom space */
 
   padding: 14px 30px;
   display: flex;
@@ -1020,12 +1031,8 @@ button {
   font-size: 13px;
 }
 
-/* Footer text */
 .footer p {
   margin: 0;
   opacity: 0.85;
   letter-spacing: 0.3px;
-}
-.footer:hover {
-  box-shadow: 0 0 25px rgba(255, 255, 255, 0.08);
 }
