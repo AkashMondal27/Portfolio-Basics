@@ -201,6 +201,7 @@ html {
   margin-bottom: 30px;
 }
 
+
 .btn {
   padding: 14px 30px;
   background: #f97316;
@@ -229,6 +230,36 @@ html {
   box-shadow: 0 20px 60px rgba(0,0,0,0.6);
 }
 
+/* University link */
+
+.hero-left p a {
+  color: #92c5d9;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.hero-left p a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  height: 2px;
+  background: #f97316;
+  transition: width 0.2s ease;
+}
+
+.hero-left p a:hover {
+  color: #fb923c;
+}
+
+.hero-left p a:hover::after {
+  width: 100%;
+}
+
+
 
 /* --------Hero section responsive  ---------------- */
 @media (max-width: 900px) {
@@ -237,6 +268,9 @@ html {
     text-align: center;
     gap: 40px;
   }
+  .hero-left { order: 2; }
+  .hero-right { order: 1; }
+
   .hero-left h1 {
     font-size: 2.8rem;
     white-space: nowrap; 
