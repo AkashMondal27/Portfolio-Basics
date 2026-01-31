@@ -654,8 +654,6 @@ html {
     grid-auto-rows: auto; /* allow natural flow on small screens */
   }
   .title { font-size: 28px; }
-  .card { min-height: 210px; }
-  .card-media { height: 90px; }
   .card-label { padding: 8px 36px; }
   .card-links { padding: 0 6px; }
 }
@@ -687,6 +685,9 @@ html {
 
    .card {
     min-height: unset;
+    max-width: 250px;  /*  limit card width on small screens */
+    margin: 0 auto;    /* center cards */
+    
     
   }
   .card-media {
