@@ -230,7 +230,7 @@ html {
 }
 
 
-/* ---------------- RESPONSIVE ---------------- */
+/* --------Hero section responsive  ---------------- */
 @media (max-width: 900px) {
   .hero {
     flex-direction: column;
@@ -239,8 +239,9 @@ html {
   }
   .hero-left h1 {
     font-size: 2.8rem;
+    white-space: nowrap; 
   }
-
+  
   .hero-right img {
     width: 260px;
   }
@@ -267,6 +268,19 @@ html {
     cursor: pointer;
   }
 }
+@media(max-width :480){
+ .hero-left h1 {
+    font-size: 2.8rem;
+    white-space: nowrap;
+  }  
+}
+  
+@media (max-width: 360px) {
+  .hero-left h1 {
+    font-size: 2rem;
+  }
+}
+
 
 
 
@@ -627,7 +641,7 @@ html {
 }
 
 /* responsive rules */
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
   .cards-wrap {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 1fr;
@@ -689,6 +703,8 @@ html {
     line-clamp: 6;
   }
 }
+
+
 /* -----------------------------------------EDUCATION SECTION --------------------------*/
 .Educationsection {
     padding: 80px 20px;
@@ -769,7 +785,7 @@ html {
 
 @media (max-width: 900px) {
   .education-box {
-    width: 75%;
+    width: 80%;
     padding: 16px 20px;
   }
 
