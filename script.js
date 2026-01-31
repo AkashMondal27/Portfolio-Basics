@@ -7,6 +7,7 @@ const overlay = document.getElementById("menuOverlay");
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
   overlay.classList.toggle("active");
+  hamburger.classList.toggle("active");
 
   // lock body scroll
   document.body.style.overflow =
@@ -17,6 +18,7 @@ hamburger.addEventListener("click", () => {
 overlay.addEventListener("click", () => {
   navLinks.classList.remove("active");
   overlay.classList.remove("active");
+  hamburger.classList.remove("active");
   document.body.style.overflow = "auto";
 });
 
@@ -25,6 +27,7 @@ document.querySelectorAll(".nav-links a").forEach(link => {
   link.addEventListener("click", () => {
     navLinks.classList.remove("active");
     overlay.classList.remove("active");
+    hamburger.classList.remove("active");
     document.body.style.overflow = "auto";
   });
 });

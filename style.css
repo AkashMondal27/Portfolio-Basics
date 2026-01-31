@@ -106,11 +106,12 @@ html {
   width: 100%;
 }
 
-/* Hamburger */
+/* Hamburger  :-  lines in responsive mode*/
 .hamburger {
   display: none;
   flex-direction: column;
   gap: 5px;
+  cursor: pointer;
 }
 
 .hamburger span {
@@ -118,6 +119,7 @@ html {
   height: 3px;
   background: white;
   border-radius: 4px;
+  transition: all 0.35s ease;
 }
 
 
@@ -140,7 +142,18 @@ html {
   opacity: 1;
   pointer-events: auto;
 }
+/* ✖ state */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
 
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
 @media (max-width: 900px) {
   .navbar {
     left: 16px;
@@ -224,6 +237,9 @@ html {
     text-align: center;
     gap: 40px;
   }
+  .hero-left h1 {
+    font-size: 2.8rem;
+  }
 
   .hero-right img {
     width: 260px;
@@ -251,6 +267,7 @@ html {
     cursor: pointer;
   }
 }
+
 
 
 /* --------------------------------- SKILLS SECTION ------------------------- */
