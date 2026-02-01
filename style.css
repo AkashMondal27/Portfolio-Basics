@@ -9,15 +9,21 @@ body {
   /* background: radial-gradient(circle at top left, #1c253d, #010410); */
   /* background: radial-gradient(circle at top left, #121827, #010410, #0f0f1f);
   color: white; */
-   background: #010409; /* darker than #020617 */
+   /* background: #010409; darker than #020617 */
+     background: #010111;;
   color: #ffffff;
   padding: 20px;
   line-height: 1.5;
  
 }
+@keyframes lightMove {
+  from { background-position: -100% 50%; }
+  to   { background-position: 100% 50%; }
+}
 body::before {
   content: "";
   position: fixed;
+   z-index: -1;
   inset: 0;
   background: linear-gradient(
     120deg,
@@ -27,11 +33,18 @@ body::before {
   );
   pointer-events: none;
   mix-blend-mode: screen;
+  background-size: 200% 200%;
+  animation: lightMove 30s linear infinite;   
 }
 html {
   scroll-behavior: smooth;
 }
 
+@media (max-width: 48px) {
+  body::before {
+    opacity: 0.6;
+  }
+}
 
 /* --------------------------------- NAVBAR ---------------------------- */
 .navbar {
