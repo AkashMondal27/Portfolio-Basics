@@ -693,7 +693,7 @@ html {
   }
   .title { font-size: 28px; }
   .card-label { padding: 8px 36px; }
-  .card-links { padding: 0 6px; }
+  .card-links { padding: 0 7px; }
 }
 
 
@@ -927,6 +927,7 @@ html {
 
 .card h3 {
   font-size: 15px;
+  color: #d39661;
   margin-bottom: 8px;
   text-align: center;
 }
@@ -988,7 +989,7 @@ html {
   gap: 8px;
   border-radius: 9px;
   background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.08);
+  border: 2px solid rgba(247, 245, 245, 0.08);
   color: white;
   display: flex;
   align-items: center;
@@ -1000,6 +1001,7 @@ html {
   color: #ffeb3b;
   transform: translateY(-3px);
 }
+
 /* Form */
 .contact-container {
   width: 100%;
