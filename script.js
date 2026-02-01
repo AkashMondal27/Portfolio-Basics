@@ -22,7 +22,7 @@ overlay.addEventListener("click", () => {
   document.body.style.overflow = "auto";
 });
 
-// Optional: close on link click
+// close on link click
 document.querySelectorAll(".nav-links a").forEach(link => {
   link.addEventListener("click", () => {
     navLinks.classList.remove("active");
@@ -33,12 +33,19 @@ document.querySelectorAll(".nav-links a").forEach(link => {
 });
 
 
+
+//name in different languages changing effect
 const names = [
   "Akash Mondal",        // English
   "आकाश मंडल",          // Hindi
   "আকাশ মন্ডল",         // Bengali
- 
-
+  "ಆಕಾಶ ಮಂಡಲ್",     // Kannada
+  "આકાશ મંડલ",      // Gujarati
+  "ਆਕਾਸ਼ ਮੰਡਲ",      // Punjabi
+  "아카쉬 몬달",         // Korean
+  "アカシュ・モンダル",   // Japanese (Katakana)
+  "阿卡什·蒙达尔",       // Chinese (Simplified)
+  "Акаш Мондал"         // Russian
 ];
 
 const nameEl = document.getElementById("nameRotate");
