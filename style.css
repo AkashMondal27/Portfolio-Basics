@@ -34,13 +34,13 @@ body::before {
   pointer-events: none;
   mix-blend-mode: screen;
   background-size: 200% 200%;
-  animation: lightMove 30s linear infinite;   
+  animation: lightMove 20s linear infinite;   
 }
 html {
   scroll-behavior: smooth;
 }
 
-@media (max-width: 48px) {
+@media (max-width: 480px) {
   body::before {
     opacity: 0.6;
   }
