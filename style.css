@@ -228,7 +228,11 @@ html {
   width: 350px;
   border-radius: 18px;
   box-shadow: 0 20px 60px rgba(0,0,0,0.6);
+  border: G;
 }
+
+
+
 
 /* University link */
 
@@ -327,7 +331,7 @@ html {
  
 }
 .skills-section{
-    scroll-margin-top: 90px; /
+    scroll-margin-top: 90px; 
 }
 .skill-title {
   text-align: center;
@@ -941,7 +945,7 @@ html {
   transform: translateY(-2px);
 }
 /* Icon */
-.icon {
+.contact-icon {
   width: 34px;
   height: 34px;
   font-size: 14px;
