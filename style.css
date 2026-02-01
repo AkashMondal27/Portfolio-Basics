@@ -208,19 +208,34 @@ html {
   max-width: 600px;
 }
 
-.hero-left h1 {
+/* .hero-left h1 {
+  
   font-size: 3.5rem;
   font-weight: 700;
 }
 
 .hero-left h1 span {
   color: #f97316;
+} */
+.hero-left h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  background: linear-gradient(
+    135deg,
+    #ffffff,
+    #ff6c03,
+    #8b5cf6
+  );
+  background-size: 200%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero-left h2 {
   margin: 15px 0;
   font-size: 1.6rem;
-  color: #95694a;
+  color: #79543a;
 }
 
 .hero-left p {
@@ -232,7 +247,8 @@ html {
 
 .btn {
   padding: 14px 30px;
-  background: #f97316;
+  /* background: #f97316; */
+    background: #8a5029;
   color: white;
   border: none;
   border-radius: 10px;
@@ -1054,6 +1070,7 @@ html {
 
 .contact-container h2 {
   font-size: 16px;
+    color: #d39661;
   margin-bottom: 10px;
 }
 
