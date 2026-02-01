@@ -208,15 +208,7 @@ html {
   max-width: 600px;
 }
 
-/* .hero-left h1 {
-  
-  font-size: 3.5rem;
-  font-weight: 700;
-}
 
-.hero-left h1 span {
-  color: #f97316;
-} */
 .hero-left h1 {
   font-size: 3.5rem;
   font-weight: 700;
@@ -497,7 +489,7 @@ html {
     --card-width: 80px;
     --card-height: 80px;
     --depth: 150px;
-    animation-duration: 30s;
+    animation-duration: 25s;
   }
 
   .skill-card .img {
