@@ -558,7 +558,7 @@ html {
   justify-content: flex-start;
   box-shadow: 1px 1px 10px rgba(14, 116, 219, 0.6),
    inset 0 1px 0 rgba(255, 255, 255, 0.02);
-  overflow: hidden;
+  overflow: visible;
   transition: transform 0.24s ease, box-shadow 0.24s ease;
   border: 1px solid rgba(231, 15, 15, 0.03);
   height: 100%;       /* fill the grid cell */
@@ -573,7 +573,7 @@ html {
   height: 150px;
   border-radius: 10px;
   margin: -4px -4px 12px -4px;
-
+  overflow: hidden;
   background-size: contain;   
   background-position: center;
   background-repeat: no-repeat;
@@ -638,8 +638,8 @@ html {
 
 /* SVG icon styles */
 .icon {
-  width: 18px;
-  height: 18px;
+  width: 30px;
+  height: 30px;
   display: block;
   color: white; /* icons inherit this color */
   opacity: 0.95;
@@ -754,10 +754,7 @@ html {
   .card-links {
     padding: 0 8px;             /* tighter icon spacing */
   }
-  .icon {
-    width: 10px;
-    height: 10px;
-  }
+  */
 
   .projects-section {
     padding: 0 12px;   
@@ -1001,6 +998,19 @@ html {
   color: #ffeb3b;
   transform: translateY(-3px);
 }
+#ocial-btn1 {
+  background: #192127;
+}
+#ocial-btn2 {
+  background: #166995;
+}
+#ocial-btn3 {
+  background: #000000;
+}
+#ocial-btn4 {
+  background: #b42e3e;
+}
+
 
 /* Form */
 .contact-container {
